@@ -1,11 +1,11 @@
 <style>
-  .lwj-demo-header {
+  .10t-sub-header {
     background: var(--black);
     font-family: var(--font-family);
     position: relative;
   }
 
-  .lwj-demo-header .logo-wrapper {
+  .10t-sub-header .logo-wrapper {
     align-items: center;
     display: flex;
     height: 56px;
@@ -15,7 +15,7 @@
     width: 100vw;
   }
 
-  .lwj-demo-header .logo-wrapper::after {
+  .10t-sub-header .logo-wrapper::after {
     background-image: linear-gradient(
       255deg,
       var(--black) 0%,
@@ -31,7 +31,7 @@
     z-index: 10;
   }
 
-  .lwj-demo-header .logo {
+  .10t-sub-header .logo {
     display: block;
     height: auto;
     position: relative;
@@ -41,12 +41,12 @@
     z-index: 15;
   }
 
-  .lwj-demo-header .logo::after {
+  .10t-sub-header .logo::after {
     background: var(--white);
     border: 1px solid var(--dark-gray);
     border-radius: 0.25rem;
     color: var(--dark-gray);
-    content: 'Check out Learn With Jason!';
+    content: 'Welcome to CrowdedTent subscriptions portal!';
     display: block;
     left: -0.5rem;
     opacity: 0;
@@ -58,24 +58,24 @@
     width: 230px;
   }
 
-  .lwj-demo-header .logo:active,
-  .lwj-demo-header .logo:focus,
-  .lwj-demo-header .logo:hover {
+  .10t-sub-header .logo:active,
+  .10t-sub-header .logo:focus,
+  .10t-sub-header .logo:hover {
     transform: rotate(0deg);
   }
 
-  .lwj-demo-header .logo:active::after,
-  .lwj-demo-header .logo:focus::after,
-  .lwj-demo-header .logo:hover::after {
+  .10t-sub-header .logo:active::after,
+  .10t-sub-header .logo:focus::after,
+  .10t-sub-header .logo:hover::after {
     opacity: 1;
   }
 
-  .lwj-demo-header .logo img {
+  .10t-sub-header .logo img {
     display: block;
     width: 100%;
   }
 
-  .lwj-demo-header .home-link {
+  .10t-sub-header .home-link {
     color: var(--white);
     font-size: 1rem;
     font-weight: 900;
@@ -85,13 +85,13 @@
     z-index: 15;
   }
 
-  .lwj-demo-header #canvas {
+  .10t-sub-header #canvas {
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  .lwj-demo-header .top-bar {
+  .10t-sub-header .top-bar {
     animation: gradient-roll 20s linear infinite alternate;
     background-image: var(--lwj-gradient);
     background-size: 200%;
@@ -103,32 +103,32 @@
     z-index: 5;
   }
 
-  .lwj-demo-header .top-bar::before,
-  .lwj-demo-header .top-bar::after {
+  .10t-sub-header .top-bar::before,
+  .10t-sub-header .top-bar::after {
     content: '';
     position: absolute;
     left: 0;
     width: 100vw;
   }
 
-  .lwj-demo-header .top-bar::before {
+  .10t-sub-header .top-bar::before {
     bottom: 1px;
     height: 0.5px;
     background-color: var(--light-gray);
   }
 
-  .lwj-demo-header .top-bar::after {
+  .10t-sub-header .top-bar::after {
     bottom: 0;
     height: 1px;
     background-color: var(--black);
   }
 </style>
 
-<header class="lwj-demo-header">
+<header class="10t-sub-header">
   <div class="logo-wrapper">
     <canvas id="canvas" width="300" height="56"></canvas>
-    <a href="https://www.learnwithjason.dev" class="logo"
-      ><img src="/images/learn-with-jason-dark.svg" alt="Learn With Jason"
+    <a href="https://crowdedtent.com" class="logo"
+      ><img src="/images/crowdedtent-logo.svg" alt="CrowdedTent logotype"
     /></a>
     <a href="/" rel="home" class="home-link">
       {{ title }}
