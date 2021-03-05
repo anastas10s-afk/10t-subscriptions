@@ -1,6 +1,6 @@
 <style>
   .10t-sub-header {
-    background: var(--black);
+    background: #323232;
     font-family: var(--font-family);
     position: relative;
   }
@@ -8,7 +8,7 @@
   .10t-sub-header .logo-wrapper {
     align-items: center;
     display: flex;
-    height: 56px;
+    height: 86px;
     justify-content: flex-start;
     padding: 0 1rem;
     position: relative;
@@ -16,11 +16,7 @@
   }
 
   .10t-sub-header .logo-wrapper::after {
-    background-image: linear-gradient(
-      255deg,
-      var(--black) 0%,
-      var(--black-transparent) 30%
-    );
+    background-image: url("/images/crowdedtent-logo.svg");
     bottom: 0;
     content: '';
     display: block;
@@ -72,7 +68,7 @@
 
   .10t-sub-header .logo img {
     display: block;
-    width: 100%;
+    width: 3%;
   }
 
   .10t-sub-header .home-link {
@@ -91,7 +87,7 @@
     left: 0;
   }
 
-  .10t-sub-header .top-bar {
+/*  .10t-sub-header .top-bar {
     animation: gradient-roll 20s linear infinite alternate;
     background-image: var(--lwj-gradient);
     background-size: 200%;
@@ -101,27 +97,8 @@
     top: 100%;
     width: 100vw;
     z-index: 5;
-  }
+  } */
 
-  .10t-sub-header .top-bar::before,
-  .10t-sub-header .top-bar::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100vw;
-  }
-
-  .10t-sub-header .top-bar::before {
-    bottom: 1px;
-    height: 0.5px;
-    background-color: var(--light-gray);
-  }
-
-  .10t-sub-header .top-bar::after {
-    bottom: 0;
-    height: 1px;
-    background-color: var(--black);
-  }
 </style>
 
 <header class="10t-sub-header">
@@ -137,9 +114,3 @@
 
   <div class="top-bar"></div>
 </header>
-
-<script type="module">
-  import { startAnimation } from '/js/dots.js';
-
-  startAnimation();
-</script>
