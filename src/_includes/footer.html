@@ -1,5 +1,5 @@
 <style>
-  .lwj-demo-footer {
+  .10t-sub-footer {
     background: var(--black);
     color: var(--light-gray);
     font-family: var(--font-family);
@@ -8,7 +8,7 @@
     text-align: center;
   }
 
-  .lwj-demo-footer a {
+  .10t-sub-footer a {
     color: inherit;
     display: block;
     font-size: 0.75rem;
@@ -17,13 +17,13 @@
     text-decoration: none;
   }
 
-  .lwj-demo-footer a:active,
-  .lwj-demo-footer a:focus,
-  .lwj-demo-footer a:hover {
+  .10t-sub-footer a:active,
+  .10t-sub-footer a:focus,
+  .10t-sub-footer a:hover {
     color: var(--pink-text);
   }
 
-  .lwj-demo-footer .bottom-bar {
+  .10t-sub-footer .bottom-bar {
     animation: gradient-roll 20s linear infinite alternate;
     background-image: var(--lwj-gradient);
     background-size: 200%;
@@ -36,51 +36,39 @@
     z-index: 5;
   }
 
-  .lwj-demo-footer .bottom-bar::before,
-  .lwj-demo-footer .bottom-bar::after {
+  .10t-sub-footer .bottom-bar::before,
+  .10t-sub-footer .bottom-bar::after {
     content: '';
     position: absolute;
     left: 0;
     width: 100vw;
   }
 
-  .lwj-demo-footer .bottom-bar::before {
+  .10t-sub-footer .bottom-bar::before {
     top: 1px;
     height: 0.5px;
     background-color: var(--light-gray);
   }
 
-  .lwj-demo-footer .bottom-bar::after {
+  .10t-sub-footer .bottom-bar::after {
     top: 0;
     height: 1px;
     background-color: var(--black);
   }
 
   @media (min-width: 770px) {
-    .lwj-demo-footer {
+    .10t-sub-footer {
       padding-bottom: 0;
       padding-top: 0;
     }
 
-    .lwj-demo-footer a {
+    .10t-sub-footer a {
       display: inline-block;
     }
   }
 </style>
 
-<footer class="lwj-demo-footer">
-  <a href="https://www.learnwithjason.dev"
-    >Created on <em>Learn With Jason</em></a
-  >
-  {% if meta.episode %}<a href="{{ meta.episode }}">Watch It Get Built</a>{%
-  endif %}{% if meta.tutorial %}<a href="{{ meta.tutorial }}">Tutorial</a>{%
-  endif %}{% if meta.repo %}<a href="https://github.com/{{ meta.repo }}"
-    >Source Code</a
-  >
-  <a
-    href="http://app.netlify.com/start/deploy?repository=https://github.com/{{ meta.repo }}?utm_source=learnwithjason&utm_medium=lwj-demo-footer-jl&utm_campaign=devex"
-    >Deploy Your Own Copy</a
-  >{% endif %}
-
+<footer class="10t-sub-footer">
+  <a href="https://crowdedtent.com">Crafted with meraki by <strong>Crowded</strong>Tent</a>
   <div class="bottom-bar"></div>
 </footer>
